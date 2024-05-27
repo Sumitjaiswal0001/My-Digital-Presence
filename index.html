@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! I'm sumit kumar jaiswal, a Frontend devloper based in Bokaro steel city. I specialize in HTML,CSS and Javascript.</p>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-gallery">
+            <div class="project">
+                <h2>E-commerce website</h2>
+                <p>
+                    Project Title: Modern E-Commerce Website
+
+Objective: Develop a fully functional e-commerce website that offers a seamless shopping experience for users, featuring product listings, a shopping cart, secure checkout, user authentication, and an administrative panel for managing products and orders.
+
+Key Features
+User Interface (UI):
+
+Homepage: A visually appealing homepage with featured products, promotions, and categories.
+Product Listings: Organized product categories with filters and search functionality to help users find what they're looking for.
+Product Detail Pages: Detailed product descriptions, high-quality images, pricing, and customer reviews.
+Shopping Cart: Users can add or remove items, adjust quantities, and view the total cost.
+Checkout Process: A streamlined, multi-step process for entering shipping information, selecting payment methods, and reviewing orders.
+User Account: Registration and login functionality, with user profiles that store order history, addresses, and payment methods.
+Responsive Design: Optimized for both desktop and mobile devices to ensure a consistent user experience across all platforms.
+                </p>
+            </div>
+            <div class="project">
+                <h2>food delivery</h2>
+                <p>Key Features
+                    User Interface (UI):
+                    
+                    Homepage: Display featured restaurants, popular dishes, and promotions.
+                    Restaurant Listings: Browse and filter restaurants by cuisine, rating, and location.
+                    Menu Pages: View detailed menus with images, descriptions, and prices.
+                    Order System: Add items to the cart, customize orders, and review the cart before checkout.
+                    User Accounts: Create and manage user profiles, order history, and saved addresses.
+                    Responsive Design: Optimized for both desktop and mobile devices.
+                    </p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 sumit kumar jaiswal. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    if (!name || !email || !message) {
+        alert('Please fill in all fields');
+        e.preventDefault();
+    }
+});
+
+    </script>
+</body>
+</html>
